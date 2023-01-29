@@ -3,27 +3,37 @@
 * {
   margin: 0;
   padding: 0;
+
   font-family: 'Poppins', sans-serif;
 }
 
 :root {
   --primary-color: rgb(98, 225, 98);
   --secondary-color: white;
+  --tertiary-color: black;
 }
 
 a {
   text-decoration-line: none;
+
   color: var(--secondary-color);
 }
 
 a:hover {
-  color: black;
+  color: var(--tertiary-color);
 }
 
 #header {
+  position: fixed;
+
   display: flex;
   align-items: center;
+
+  width: 100vw;
+  height: 6vh;
+
   padding: 10px;
+
   background-color: var(--primary-color);
   color: var(--secondary-color);
 }
@@ -33,16 +43,40 @@ a:hover {
 }
 
 #header-nav a {
-  margin-right: 5vw;
-  margin-left: 5vw;
+  margin-right: 3vw;
+  margin-left: 3vw;
 }
 
 .hamburguer-retangle {
   width: 30px;
   height: 6px;
+
   margin-bottom: 5px;
+
   border-radius: 5px;
+
   background-color: var(--secondary-color);
+}
+
+#home {
+  height: 100vh;
+
+  padding-top: 9vh;
+
+  background-color: palevioletred;
+}
+
+#services {
+  height: 100vh;
+
+  background-color: rgb(168, 168, 243);
+}
+
+#products {
+  height: 100vh;
+
+  background-color: yellow;
+
 }
 
 @media (min-width: 720px) {
