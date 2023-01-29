@@ -9,7 +9,6 @@
 :root {
   --primary-color: rgb(98, 225, 98);
   --secondary-color: white;
-  --terciary-color: rgb(134, 235, 134);
 }
 
 a {
@@ -23,34 +22,36 @@ a:hover {
 
 #header {
   display: flex;
-  background-color: var(--primary-color);
+  align-items: center;
   padding: 10px;
+  background-color: var(--primary-color);
   color: var(--secondary-color);
 }
 
-#header-logo {
-  width: 25%;
-}
-
 #header-nav {
-  width: 75%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  margin: auto;
 }
 
-#hamburguer-menu {
+#header-nav a {
+  margin-right: 5vw;
+  margin-left: 5vw;
+}
+
+.hamburguer-retangle {
   width: 30px;
-  background-color: blue;
+  height: 6px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 720px) {
   #hamburguer-menu {
     display: none;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 719px) {
   #header-nav {
     display: none;
   }
